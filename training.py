@@ -1,3 +1,13 @@
-for number in range(5):
-    print('Thank you')
+text  = "MyText";
+type(text);
+# # for number in range(100):
+# #     print('Boss' + str(number))
     
+# def demo(argument):
+#     switcher = {
+#         1: "January",
+#         2: "February"
+#     }
+    
+#     print('Boss');
+#     # print(demo(1));
