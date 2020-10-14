@@ -3,6 +3,7 @@ type(text);
 text  = "MyText";
 type(text);
 type(text);
+type(text);
 # # for number in range(100):
 # #     print('Boss' + str(number))
     
