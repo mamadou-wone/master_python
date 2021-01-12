@@ -1,36 +1,56 @@
-# year = int(input("Which year do you want to check "))
+#  ___       __   ________  ________   _______      
+# |\  \     |\  \|\   __  \|\   ___  \|\  ___ \     
+# \ \  \    \ \  \ \  \|\  \ \  \\ \  \ \   __/|    
+#  \ \  \  __\ \  \ \  \\\  \ \  \\ \  \ \  \_|/__  
+#   \ \  \|\__\_\  \ \  \\\  \ \  \\ \  \ \  \_|\ \ 
+#    \ \____________\ \_______\ \__\\ \__\ \_______\
+#     \|____________|\|_______|\|__| \|__|\|_______|
+                                    
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
 
-# if year % 4 == 0 or year % 400 == 0 and year % 100 != 0:
-#     print("We have a leap year")
-# else:
-#     print("We dont have a leap year")    
-    
-boss = input("Enter you name ")
-crush = input("Enter your crush name ")
+direction = input("Where do you want to go : left or right ? ")
 
-boss_score = 0
-crush_score = 0
+if direction == "right":
+    print("Game Over :(")
+else:
+        middle = input("Type wait or swim ")
+        if middle == "swim":
+            print("Game Over ")
+        else:
+            color = input("Choose a color betwen : red, blue , yellow ")
+            if color == "blue":
+                print("Eaten by beast Game Over")
+            elif color == "red":
+                print("Burned by fire GAME OVER")
+            elif color == "Yellow":
+                print("You WIN")
+            else:
+                print("Game over")        
+                    
+                
 
-total1 = 0
-total2 = 0
-
-boss_lower = boss.lower()
-crush_lower = crush.lower()
-
-boss_lower2 = boss.lower()
-crush_lower2 = crush.lower()
-
-# if boss_lower.count("t") or crush_lower.count("t") or boss_lower.count("r") or crush_lower.count("r") or boss_lower.count("v") or crush_lower.count("v") or boss_lower.count("e") or crush_lower.count("e"):
-boss_score =boss_lower.count("t") + boss_lower.count("r")+ boss_lower.count("u")+boss_lower.count("e")
-crush_score = crush_lower.count("t") +  crush_lower.count("r") + crush_lower.count("u")+ crush_lower.count("e")
-total1 = boss_score + crush_score  
-
-
-
-boss_score2 =boss_lower.count("l") + boss_lower.count("o")+ boss_lower.count("v")+boss_lower.count("e")
-crush_score2 = crush_lower.count("l") +  crush_lower.count("o") + crush_lower.count("v")+ crush_lower.count("e")
-total2 = boss_score2 + crush_score2  
-
-print(str(total1)+str(total2))
 
     
