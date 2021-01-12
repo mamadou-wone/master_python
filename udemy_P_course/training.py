@@ -5,52 +5,43 @@
 #   \ \  \|\__\_\  \ \  \\\  \ \  \\ \  \ \  \_|\ \ 
 #    \ \____________\ \_______\ \__\\ \__\ \_______\
 #     \|____________|\|_______|\|__| \|__|\|_______|
-                                    
-print('''
-*******************************************************************************
-          |                   |                  |                     |
- _________|________________.=""_;=.______________|_____________________|_______
-|                   |  ,-"_,=""     `"=.|                  |
-|___________________|__"=._o`"-._        `"=.______________|___________________
-          |                `"=._o`"=._      _`"=._                     |
- _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
-|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
-|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
-          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
- _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
-|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
-|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
-____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
-/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
-____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
-/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
-____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/_____ /
-*******************************************************************************
-''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.") 
+import random                                 
 
-direction = input("Where do you want to go : left or right ? ")
+random_int = random.randint(0 , 4)
 
-if direction == "right":
-    print("Game Over :(")
-else:
-        middle = input("Type wait or swim ")
-        if middle == "swim":
-            print("Game Over ")
-        else:
-            color = input("Choose a color betwen : red, blue , yellow ")
-            if color == "blue":
-                print("Eaten by beast Game Over")
-            elif color == "red":
-                print("Burned by fire GAME OVER")
-            elif color == "Yellow":
-                print("You WIN")
-            else:
-                print("Game over")        
-                    
-                
+# name = ['Angela', 'Ben', 'Jenny', 'Michael', 'Chloe']
+
+# print(name[random_int] + " is going to buy the meal today!")
+
+# name_string = input("Give me the name ")
+
+# name = name_string.split(', ')
+
+# print(name[random_int] + " is going to buy the meal today!")
+
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+choice = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+
+# choice = input("Enter your choice ")
+
+column = int(choice[0]) - 1
+row = int(choice[1]) - 1 
+
+map[row][column] = "X"
 
 
-    
+
+
+#Write your code above this row 👆
+# Ligne/column
+# print(map[1][2])
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
