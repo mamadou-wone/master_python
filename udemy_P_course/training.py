@@ -35,7 +35,7 @@ choice = input("Where do you want to put the treasure? ")
 column = int(choice[0]) - 1
 row = int(choice[1]) - 1 
 
-map[row][column] = "X"
+map[row][column] = "x"
 
 
 
