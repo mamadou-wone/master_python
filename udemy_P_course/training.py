@@ -5,43 +5,59 @@
 #   \ \  \|\__\_\  \ \  \\\  \ \  \\ \  \ \  \_|\ \ 
 #    \ \____________\ \_______\ \__\\ \__\ \_______\
 #     \|____________|\|_______|\|__| \|__|\|_______|
-import random                                 
 
-random_int = random.randint(0 , 4)
+import random
 
-# name = ['Angela', 'Ben', 'Jenny', 'Michael', 'Chloe']
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
 
-# print(name[random_int] + " is going to buy the meal today!")
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
 
-# name_string = input("Give me the name ")
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
 
-# name = name_string.split(', ')
-
-# print(name[random_int] + " is going to buy the meal today!")
-
-# 🚨 Don't change the code below 👇
-row1 = ["⬜️","⬜️","⬜️"]
-row2 = ["⬜️","⬜️","⬜️"]
-row3 = ["⬜️","⬜️","⬜️"]
-map = [row1, row2, row3]
-print(f"{row1}\n{row2}\n{row3}")
-choice = input("Where do you want to put the treasure? ")
-# 🚨 Don't change the code above 👆
-
-#Write your code below this row 👇
-
-# choice = input("Enter your choice ")
-
-column = int(choice[0]) - 1
-row = int(choice[1]) - 1 
-
-map[row][column] = "x"
+allOption = [rock,paper,scissors]
+randomChoce =  random.randint(0 , 2)
 
 
+choice = input("What do you choose ? Type 0 for Rock, 1 for Paper or 2 for Scissors ")
+userChoice = allOption[int(choice)]
+cumperterChoice = allOption[randomChoce]
+
+print(userChoice)
+print("Computer Choice:\n" + cumperterChoice)
 
 
-#Write your code above this row 👆
-# Ligne/column
-# print(map[1][2])
-# 🚨 Don't change the code below 👇
-print(f"{row1}\n{row2}\n{row3}")
+if userChoice == rock and cumperterChoice == scissors:
+    print("You loose")
+elif userChoice == scissors and cumperterChoice == rock:
+    print("You Win")
+elif userChoice == scissors and cumperterChoice == paper:
+    print("You Win")
+elif userChoice == paper and cumperterChoice == scissors:
+    print("You Loose")    
+elif userChoice == paper and cumperterChoice == rock:
+    print("You Win")
+elif userChoice == rock and cumperterChoice == paper:
+    print("You Loose")    
+else:
+    print("Equal")    
