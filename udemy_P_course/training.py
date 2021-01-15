@@ -6,58 +6,12 @@
 #    \ \____________\ \_______\ \__\\ \__\ \_______\
 #     \|____________|\|_______|\|__| \|__|\|_______|
 
-import random
+student_heights = input("Input a list of student heights ").split()
+sum = 0
+averrage = 0
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+  sum += int(student_heights[n])
 
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
-
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-
-allOption = [rock,paper,scissors]
-randomChoce =  random.randint(0 , 2)
-
-
-choice = input("What do you choose ? Type 0 for Rock, 1 for Paper or 2 for Scissors ")
-userChoice = allOption[int(choice)]
-cumperterChoice = allOption[randomChoce]
-
-print(userChoice)
-print("Computer Choice:\n" + cumperterChoice)
-
-
-if userChoice == rock and cumperterChoice == scissors:
-    print("You loose")
-elif userChoice == scissors and cumperterChoice == rock:
-    print("You Win")
-elif userChoice == scissors and cumperterChoice == paper:
-    print("You Win")
-elif userChoice == paper and cumperterChoice == scissors:
-    print("You Loose")    
-elif userChoice == paper and cumperterChoice == rock:
-    print("You Win")
-elif userChoice == rock and cumperterChoice == paper:
-    print("You Loose")    
-else:
-    print("Equal")    
+averrage = sum / len(student_heights)
+print(round(averrage))  
