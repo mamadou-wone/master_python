@@ -50,7 +50,7 @@ listPassWord = list(password)
 random.shuffle(listPassWord)
 newPass = ''.join(listPassWord)
 
-print(newPass)
+# print(newPass)
 
 
  
