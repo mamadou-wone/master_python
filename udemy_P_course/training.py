@@ -7,65 +7,10 @@
 #     \|____________|\|_______|\|__| \|__|\|_______|
 
 import random
+from word_hagman import word_list
+from art_hagman import *
 #Step 1 
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
 
-word_list = ["aardvark", "baboon", "camel"]
 
 randomWord = random.choice(word_list)
 #TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
@@ -82,10 +27,10 @@ for i in range(len(randomWord)):
     correct_word.append('_')
 
 life = 6
-wrong = False  
 
+print(logo)
 while correct_word != list(randomWord):
-
+    wrong = False  
     userLetter = input("Gess a letter : ").lower()
     for i in range(len(randomWord)):
         if randomWord[i] == userLetter:
@@ -95,10 +40,10 @@ while correct_word != list(randomWord):
             
     if wrong:
         life -= 1
-        print(life)
+        print(stages[life])
     
     print(correct_word)
-    if life == 0 and '_' in randomWord:
+    if life == 0 :
         print("Game Over")
         break
     if correct_word == list(randomWord):
