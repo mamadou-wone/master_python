@@ -11,5 +11,5 @@ def f1():
     print(x)
 
 x =+ 1
-print(x)
-f1()       
+# print(x)
+# f1()       
