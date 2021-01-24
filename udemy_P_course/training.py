@@ -5,35 +5,59 @@
 #   \ \  \|\__\_\  \ \  \\\  \ \  \\ \  \ \  \_|\ \ 
 #    \ \____________\ \_______\ \__\\ \__\ \_______\
 #     \|____________|\|_______|\|__| \|__|\|_______|
+from art_hagman import  logo2
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f',
+            'g', 'h', 'i', 'j', 'k', 'l', 'm',
+            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+print(logo2)
+# direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
 
-#Write your code below this line 👇
-# import  math
+#TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
 
-# def paint_calc(height , width , cover):
-#     result = (height * width) / cover
-#     print(f"You'll need {math.ceil(result)} cans of paint.")
+def encrypt(text):
+    encrypt = ''
+    text2 = []
+    for i in text:
+        text2.append(i)
+        
+    for i in text2:
+        if i in alphabet :
+            shift2 = alphabet.index(i) + shift
+            if shift2 >= len(alphabet):
+                shift3 = len(alphabet) - alphabet.index(i)
+                shift2 = shift - shift3     
+            i = alphabet[shift2]           
+            encrypt += i
+        else:
+            i = i   
+            encrypt += i     
+    print(f"The encode text is {encrypt} ")        
+# encrypt(text)    
 
 
+def decrypt(text):
+    decrypt = ''
+    encrypt = []
 
-#Write your code above this line 👆
-# Define a function called paint_calc() so that the code below works.   
-
-# 🚨 Don't change the code below 👇
-# test_h = int(input("Height of wall: "))
-# test_w = int(input("Width of wall: "))
-# coverage = 5
-# paint_calc(height=test_h, width=test_w, cover=coverage)
-
-# def primeNumber(number):
-#     tabPrime = []
-#     for i in range(1 , number + 1):
-#         if number % i == 0:
-#             tabPrime.append(i)
-#     if len(tabPrime) == 2:
-#         print("It's a prime number")
-#     else:
-#         print("Its not a prime number")    
-
-# n = int(input("Check this number: "))          
-# primeNumber(n)        
-
+    for i in text:
+        encrypt.append(i)
+    # print(encrypt)    
+    for i in text:
+        if i in alphabet:
+            position = alphabet.index(i)
+            new_position = position - shift
+            shift2 = new_position
+            if new_position < 0:
+                shift2 = len(alphabet) + new_position
+            i = alphabet[shift2]
+            decrypt += i   
+        else:
+            i = i   
+            encrypt += i 
+    print(f"The decrypt message is {decrypt}")    
+          
+          
+         
+decrypt(text)  
