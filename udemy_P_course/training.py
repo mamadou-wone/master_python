@@ -5,59 +5,96 @@
 #   \ \  \|\__\_\  \ \  \\\  \ \  \\ \  \ \  \_|\ \ 
 #    \ \____________\ \_______\ \__\\ \__\ \_______\
 #     \|____________|\|_______|\|__| \|__|\|_______|
-from art_hagman import  logo2
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f',
-            'g', 'h', 'i', 'j', 'k', 'l', 'm',
-            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-print(logo2)
-# direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
 
-#TODO-1: Create a function called 'encrypt' that takes the 'text' and 'shift' as inputs.
+# student_scores = {
+#   "Harry": 81,
+#   "Ron": 78,
+#   "Hermione": 99, 
+#   "Draco": 74,
+#   "Neville": 62,
+# }
+# # 🚨 Don't change the code above 👆
 
-def encrypt(text):
-    encrypt = ''
-    text2 = []
-    for i in text:
-        text2.append(i)
+# #TODO-1: Create an empty dictionary called student_grades.
+# student_grades = {}
+
+# #TODO-2: Write your code below to add the grades to student_grades.👇
+# for key in student_scores:
+#     if student_scores[key] <= 70:
+#         student_grades[key] = "Fail"
+#     elif student_scores[key] > 70 and student_scores[key] <= 80:
+#         student_grades[key] = "Acceptable"
+#     elif student_scores[key] > 80 and student_scores[key] <=90:
+#         student_grades[key] = "Exceeds Expectations"
+#     elif student_scores[key] > 900 and student_scores[key] <=100:
+#          student_grades[key] = "Outstanding"
+# # 🚨 Don't change the code below 👇
+# print(student_grades)
+
+# travel_log = [
+# {
+#   "country": "France",
+#   "visits": 12,
+#   "cities": ["Paris", "Lille", "Dijon"]
+# },
+# {
+#   "country": "Germany",
+#   "visits": 5,
+#   "cities": ["Berlin", "Hamburg", "Stuttgart"]
+# },
+# ]
+# #🚨 Do NOT change the code above
+
+# #TODO: Write the function that will allow new countries
+# #to be added to the travel_log. 👇
+# def add_new_country(country , visits, cities = []):
+#     travel_log.append(
+#        { "country": country,
+#         "visits": visits,
+#         "cities": cities}
+#     )
+
+
+
+
+# #🚨 Do not change the code below
+# add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+
+# print(travel_log)
+
+from art_hagman import massu
+
+print(massu)
+
+enchere = []
+def add_bidders(name, bid):
+    enchere.append(
+        {
+            "name": name,
+            "bid": bid
+        }
+    )
+
+continu = ''
+    
+while continu != 'no':
+    name = input("What is your name ? ")
+    bid = int(input("What is your bid ? $"))
+    confirm = input("Are there any other bidders? Type 'yes' or 'no'\n")
+    continu = confirm
+    add_bidders(name , bid)
+
+# print(enchere)
+maximun = 0
+winner = ''
+for key in enchere:
+    if key['bid'] > maximun:
+        maximun = key['bid']
+        winner = key['name']
         
-    for i in text2:
-        if i in alphabet :
-            shift2 = alphabet.index(i) + shift
-            if shift2 >= len(alphabet):
-                shift3 = len(alphabet) - alphabet.index(i)
-                shift2 = shift - shift3     
-            i = alphabet[shift2]           
-            encrypt += i
-        else:
-            i = i   
-            encrypt += i     
-    print(f"The encode text is {encrypt} ")        
-# encrypt(text)    
+print(f"The winner is {winner} with a bid of ${maximun}")    
+    
 
+    
+    
 
-def decrypt(text):
-    decrypt = ''
-    encrypt = []
-
-    for i in text:
-        encrypt.append(i)
-    # print(encrypt)    
-    for i in text:
-        if i in alphabet:
-            position = alphabet.index(i)
-            new_position = position - shift
-            shift2 = new_position
-            if new_position < 0:
-                shift2 = len(alphabet) + new_position
-            i = alphabet[shift2]
-            decrypt += i   
-        else:
-            i = i   
-            encrypt += i 
-    print(f"The decrypt message is {decrypt}")    
-          
-          
-         
-decrypt(text)  
