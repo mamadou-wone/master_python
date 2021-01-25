@@ -6,63 +6,52 @@
 #    \ \____________\ \_______\ \__\\ \__\ \_______\
 #     \|____________|\|_______|\|__| \|__|\|_______|
 
-# def format_name(firstName, lastName):
-#     first = ''
-#     name = ''
-#     completeName  = ''
-#     for i in range(1 , len(firstName)):
-#         first += firstName[i].lower()
-#     first = firstName[0].upper()+first
-    
-#     for i in range(1 ,len(lastName)):
-#         name += lastName[i].lower()
-#     name = lastName[0].upper()+name
-#     completeName = first + ' ' + name
-        
-#     return completeName    
-    
-    
+from art_hagman import calculator
 
-# test=  format_name("MAMAdou", "wONE")
-# print(test)
+print(calculator)
+def add(a , b):
+    return a +b
 
-# def is_leap(year):
-#   leap =  False
-#   if year % 4 == 0:
-#     if year % 100 == 0:
-#       if year % 400 == 0:
-#         leap = True
-#       else:
-#         leap = False
-#     else:
-#      leap = True
-#   else:
-#     leap = False
-#   return leap  
 
-# def days_in_month(year , month):
-#   month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] 
-#   days = 0 
-#   if is_leap(year) and month == 2:
-#     #   month_days[1] = 29
-#     #   month_days = month_days[month]
-#     days = 29
-#   else:
-#       days = month_days[month - 1]
-#   return days        
-  
-# #🚨 Do NOT change any of the code below 
-# year = int(input("Enter a year: "))
-# month = int(input("Enter a month: "))
-# days = days_in_month(year, month)
-# print(days)
+def soustract(a , b):
+    return a - b 
 
-def my_function(a):
-    if a < 40:
-        return
-        print("Terrible")
-    if a < 80:
-        return "Pass"
+def multiply(a , b):
+    return a * b
+
+def divide(a , b):
+    if b == 0:
+        return print("Enter a valid number")
     else:
-        return "Great"
-print(my_function(25))
+        return a / b
+        
+
+operator = {
+    "+": add,
+    "-": soustract,
+    "*": multiply,
+    "/": divide
+}  
+
+finish = ''      
+
+# stop = False
+num1 = int(input("What is the first number ? "))
+for item in operator:
+    print(item)
+symbol = input("What is the operator ? ")
+num2 = int(input("What is the second number ? "))
+result = operator[symbol](num1 , num2)
+print(result)
+
+while finish != "n":
+
+    finish = input(f"Tape 'y' to continue calculating with {result} , or 'n' to exit ")
+    if finish != 'n':
+        nextNumber = int(input("What is the next number ? "))
+        for item in operator:
+            print(item)
+        symbol = input("What is the operator ? ")
+        result = operator[symbol](result , nextNumber)
+    print(result)   
+
