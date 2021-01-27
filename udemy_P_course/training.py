@@ -24,8 +24,14 @@ def calculate_score(score = []):
         somme = sum(score)
     return somme
 
-# def compage(user_score , computer_score):
-#     if condition:
+def compage(user_score , computer_score):
+    if user_score > computer_score and user_score <= 21:
+        print("You Win")
+    elif user_score < computer_score and computer_score <= 21:
+        print("You Loose")
+    elif user_score == computer_score and user_score < 21 and computer_score < 21:
+        print("Its a draw")        
+        
         
 
 if play == 'y':
@@ -58,8 +64,7 @@ if play == 'y':
             break
         computer_score = calculate_score(computer_cards)
         continu = input("Type 'y' to get another card, type 'n' to pass: ")
-    # print(user_score)
-    # print(computer_score)
+    compage(user_score , computer_score)
 else:
     exit    
 
