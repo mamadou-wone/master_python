@@ -25,37 +25,45 @@ def chooseData(data = []):
 firstData = chooseData(data)
 secondData = chooseData(data)
 
-def compare(firstData={} , secondData = {}):
-  if firstData == secondData:
-    secondData = chooseData(data)
-  else:
-    print("Compare A : " + firstData['name'] + ", a "  + firstData['description'] + " , "+ " from " + firstData['country'])        
-    print(vs)
-    print("Against B : " + secondData['name'] + ", a "  + secondData['description'] + " , "+ " from " + secondData['country']) 
+
+def compare(firstData = {} , secondData = {},data = []):
+    if firstData == secondData:
+        secondData = chooseData(data)         
+    else:
+          print(f"Compare A: {firstData['name']} , a {firstData['description']}, from {firstData['country']} ")
+          print(vs)
+          print(f"Compare B: {secondData['name']} , a {secondData['description']}, from {secondData['country']} ")
+
 
 
 win = False
-
-
-def checkAnsuwer(answer , firstData = {} , secondData = {} , data = []):
-    if answer == "A" and firstData['follower_count'] > secondData['follower_count']:
-        print('You win continu ! ')
-        win = True
+score = 0
+compare(firstData , secondData , data) 
+while win != True: 
+  answer = input("Who has more followers ? Type A or B: ")
+  if answer == "A" and firstData['follower_count'] > secondData['follower_count']:
+        print("You Win")
         secondData = chooseData(data)
-        compare(firstData, secondData)
-    elif answer == "B" and firstData['follower_count'] < secondData['follower_count']:
-        thirdData = chooseData(data)
-        firstData = secondData
-        secondData = thirdData
-        print('You Win continu ! ')
         win = True
-        compare(firstData, secondData)  
-    else:
-      print("You Loose ")        
+        score += 1
+        compare(firstData, secondData, data)
+        win = False
+  elif answer == "B" and firstData['follower_count'] < secondData['follower_count']:
+        firstData = secondData
+        secondData = chooseData(data)
+        win = True
+        score += 1
+        compare(firstData, secondData, data)
+        print("You Win")
+        win = False
+  else:
+      print('You Loose')
       win = False
-    
-compare(firstData , secondData)     
-answer = input("Who has more followers? Type 'A' or 'B' : ")
+      break 
+              
 
-checkAnsuwer(answer , firstData , secondData , data)    
-    
+print(f"Your score is {score}")      
+
+
+# print(firstData )
+# print(secondData)
