@@ -11,7 +11,7 @@ from art_hagman import vs
 from data import data
 import random
 
-print(guess)
+# print(guess)
 
 
 # firstData = random.choice(data)
