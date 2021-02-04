@@ -110,13 +110,53 @@ Sqare drawing
 #         timmy.setheading(timmy.heading() + size)
 
 # draw_sparographe(5)        
+# colors = colorgram.extract("./udemy_P_course/poo/turtle/color.jpg", 6)
+# option = []
 
+# for i in range(len(colors)):
+#     option.append((colors[i].rgb.r, colors[i].rgb.g, colors[i].rgb.b))
+    
 import colorgram
+colors = [(204, 116, 163), (152, 154, 201), (204, 0, 4), (171, 176, 4), (89, 68, 4), (171, 95, 188)] 
 
-colors = colorgram.extract("./udemy_P_course/poo/turtle/color.jpg", 10)
+boss = Turtle()
+boss.speed('fastest')
+boss.hideturtle()
+screen = Screen()    
+screen.colormode(255)
 
-for i in range(len(colors)):
-    print(colors[i].rgb)
+def gen_color(colors = []):
+    return random.choice(colors)
+
+
+def test():
+    x = 30
+    while x <= 300:
+        for _ in range(10):
+            boss.up()
+            boss.dot(20 , gen_color(colors))
+            boss.forward(50)
+        
+        boss.goto(0, x)
+        x += 30   
+test()   
+# answer = input(" Response ? ")
+
+# if answer == "A":
+#     test()
+# else:
+#     print("NOOOOOOOOOOOOOOO")        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
 
@@ -136,4 +176,4 @@ for i in range(len(colors)):
 
 
 
-# screen.exitonclick()
+screen.exitonclick()
