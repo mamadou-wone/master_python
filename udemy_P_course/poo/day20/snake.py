@@ -49,3 +49,10 @@ class Snake:
     def right(self):
         if self.all_snake[0].heading() != LEFT:
             self.all_snake[0].setheading(RIGHT)
+            
+            
+    def reset(self):
+        for snake in self.all_snake:
+            snake.goto(1000 , 1000)
+        self.all_snake.clear()      
+        self.create_snake()  
