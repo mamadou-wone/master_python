@@ -28,8 +28,15 @@ game_is_on = True
 total_country = len(data['state'])
 country_guest = 0
 
+
+def show_missing_country(tab_country = []):
+    with open("missing.csv", "w") as missing:
+        for item in tab_country:
+            missing.write(item + "\n")
+
+
 while game_is_on:
-    answer = screen.textinput(f" {country_guest}/50 States Coorect", "Guest a Country")
+    answer = screen.textinput(f" {country_guest}/50 States Correct", "Guest a Country")
     country = answer.title()
     if country != "" and country in all_country:
         country_info = data[data["state"] == country]
@@ -38,6 +45,9 @@ while game_is_on:
         display_country(int(x_cor), int(y_cor), country)
         country_guest += 1
         all_country.remove(country)
+    elif country == "Exit":
+        show_missing_country(all_country)
+        break
 
     if country_guest == 50:
         game_is_on = False
@@ -48,6 +58,6 @@ while game_is_on:
 
 
 
-turtle.mainloop()
+# turtle.mainloop()
 
 # screen.exitonclick()
