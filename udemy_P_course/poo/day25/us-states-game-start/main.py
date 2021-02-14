@@ -22,17 +22,15 @@ all_country = []
 
 for country in data['state']:
     all_country.append(country)
-print(all_country)
 game_is_on = True
 
 total_country = len(data['state'])
 country_guest = 0
 
 
-def show_missing_country(tab_country = []):
+def show_missing_country(tab_country=[]):
     with open("missing.csv", "w") as missing:
-        for item in tab_country:
-            missing.write(item + "\n")
+        list2 = [missing.write(miss + "\n") for miss in tab_country]
 
 
 while game_is_on:
@@ -51,12 +49,6 @@ while game_is_on:
 
     if country_guest == 50:
         game_is_on = False
-
-
-
-
-
-
 
 # turtle.mainloop()
 
