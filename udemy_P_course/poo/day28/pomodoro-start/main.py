@@ -10,7 +10,16 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
+time = None
 # ---------------------------- TIMER RESET ------------------------------- # 
+def reset_timer():
+    window.after_cancel(time)
+    canvas.itemconfig(canvas_text, text="00:00")
+    timer.config(text="Timer")
+    check_marker.config(text="")
+    global reps
+    reps = 0
+
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
@@ -24,7 +33,7 @@ def start_timer():
         timer.config(text="Break", fg=RED)
     elif reps % 2 == 0:
         count_down(short_work_sec)
-        timer.config(text="Break", fg=RED)
+        timer.config(text="Break", fg=PINK)
     else:
         count_down(work_sec)
         timer.config(text="Work", fg=GREEN)
@@ -41,9 +50,15 @@ def count_down(count):
 
     canvas.itemconfig(canvas_text, text=f"{count_min}:{count_sec}")
     if count > 0:
-        window.after(1000, count_down, count-1)
+        global time
+        time = window.after(1000, count_down, count-1)
     else:
         start_timer()
+        marks = ""
+        work_session = math.floor(reps / 2)
+        for _ in range(work_session):
+            marks += "✓"
+            check_marker.config(text=marks)
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
@@ -61,11 +76,11 @@ start_button = Button(text="Start", highlightthickness=0, command=start_timer)
 start_button.grid(column=0, row=2)
 
 # Reset Button
-reset_button = Button(text="Reset", highlightthickness=0)
+reset_button = Button(text="Reset", highlightthickness=0, command=reset_timer)
 reset_button.grid(column=2, row=2)
 
 # Check Marker
-check_marker = Label(text="✔", font=(FONT_NAME, 10, "bold"), fg=GREEN, bg=YELLOW)
+check_marker = Label(font=(FONT_NAME, 10, "bold"), fg=GREEN, bg=YELLOW)
 check_marker.grid(column=1, row=3)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
