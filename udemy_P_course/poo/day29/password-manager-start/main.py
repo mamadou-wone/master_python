@@ -8,6 +8,7 @@
 import pyperclip
 from tkinter import *
 from tkinter import messagebox
+import json
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 import random
@@ -50,10 +51,31 @@ def get_info(site, get_email, password):
         email_input.delete(0, "end")
 
 
+def get_credential():
+    website = website_name.get()
+    if len(website) == 0:
+        messagebox.showerror("Error", "Le champ Website ne peut être vide")
+    else:
+        try:
+            with open("data.json") as file_data:
+                data = json.load(file_data)
+        except FileNotFoundError:
+            messagebox.showerror("Error", "Le Fichier n'exite pas ou est vide")
+        try:
+            messagebox.showinfo(website, f"Email: {data[website]['email']} \n Password: {data[website]['password']}")
+        except KeyError:
+            messagebox.showerror("Error", f"La cle {website} ne correspond à aucun champ")
+
 def save_password():
     website = website_name.get()
     email = email_input.get()
     passwd = input_password.get()
+    new_data = {
+        website:{
+            "email": email,
+            "password": passwd
+        }
+    }
 
     if len(website) == 0 or len(passwd) == 0 or len(email) == 0:
         messagebox.showerror("Error", "Verifiez les information avant de continuer")
@@ -61,12 +83,24 @@ def save_password():
         is_ok = messagebox.askokcancel(title=website,
                                        message=f"These are the detatils entered: \nEmail:{email}\nPassword:{passwd}")
         if is_ok:
-            with open("data.txt", "a") as data:
-                data.write(f"{website} |   {email} | {passwd} \n")
+            try:
+                with open("data.json", "r") as data_file:
+                    # Reading File
+                    data = json.load(data_file)
+                    # Update
+                    data.update(new_data)
+            except FileNotFoundError:
+                with open("data.json", "w") as data_file:
+                    json.dump(new_data, data_file, indent=4)
+            else:
+                with open("data.json", "w") as data_file:
+                    # Writte
+                    json.dump(data, data_file, indent=4)
+                    input_password.delete(0, "end")
+            finally:
                 input_password.delete(0, "end")
                 website_name.delete(0, "end")
                 email_input.delete(0, "end")
-
 
 # ---------------------------- UI SETUP ------------------------------- #
 
@@ -115,5 +149,9 @@ gen_button.grid(column=2, row=3)
 # Add Button
 add_button = Button(text="Add", width=36, command=save_password)
 add_button.grid(column=1, row=4, columnspan=2)
+
+search_button = Button(text="Search", command=get_credential)
+search_button.grid(column=3, row=1)
+
 
 window.mainloop()
