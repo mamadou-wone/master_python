@@ -1,12 +1,26 @@
-from twilio.rest import Client
+import requests
 
-account = "AC2f66923cc89ca72ea11f17a038d02c85"
-token = "0fdce685df4e0ce5fe7ec9f091746748"
+# response = requests.get(url="http://api.open-notify.org/iss-now.json")
+#
+# response.raise_for_status()
+#
+# data = response.json()
+# print(data['iss_position'])
+MY_LAT = 14.716677
+MY_LNG = -17.467686
+parameter = {
+    "lat": MY_LAT,
+    "lng": MY_LNG,
+    "formatted": 0
+}
 
-client = Client(account, token)
+response = requests.get(f"https://api.sunrise-sunset.org/json", params=parameter)
 
-from_whatshapp_number = "whatsapp:+221775596731"
-to_whatsapp_number = "whatsapp:+221774724175"
+response.raise_for_status()
 
-client.messages.create(body="Hey Boss", from_=from_whatshapp_number, to=to_whatsapp_number)
+data = response.json()
+sunrise = data['results']['sunrise']
+print(sunrise.split("T")[1].split(":"))
 
+for i in range(46, 56):
+    print(i)
