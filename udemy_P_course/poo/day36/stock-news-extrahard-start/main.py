@@ -104,7 +104,6 @@ else:
 # Send a seperate message with the percentage change and each article's title and description to your phone number. 
 
 
-
 #Optional: Format the SMS message like this:
 
 """
