@@ -1,16 +1,21 @@
-# This is a sample Python script.
-
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from sheety_data import SheetyData
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+sheet_data = SheetyData()
+
+def add_user():
+    print("Welcome to Boss's Flight Club.\n"
+          "We find the best flight deals and email you.")
+    first_name = input("What is your first name? \n")
+    last_name = input("What is your last name? \n")
+    email = input("What is your email?\n")
+    confirm_email = input("Type your email again\n")
+
+    if email == confirm_email:
+        sheet_data.post_data(first_name, last_name, email)
+    else:
+        print("Check your email input")
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+add_user()
