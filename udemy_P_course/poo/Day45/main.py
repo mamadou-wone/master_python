@@ -1,6 +1,34 @@
 from bs4 import BeautifulSoup
 import requests
 
+response = requests.get("https://www.empireonline.com/movies/features/best-movies-2/")
+content = response.text
+
+soup = BeautifulSoup(content, "html.parser")
+
+# print(soup)
+movies_list = soup.find_all(name="div", class_="jsx-2692754980")
+# print(len(movies_list))
+test = None
+
+top_movie = [movie.find(name="img").get("alt") for movie in movies_list if movie.find(name="img") != None]
+
+
+def reverse_list(input):
+    input.reverse()
+    return input
+
+reversed_list = reverse_list(top_movie)
+
+
+
+for i in range(len(reversed_list)):
+    with open("myfovorite_movie.txt", "a") as file:
+        file.write(f"{i+1}) {reversed_list[i]} \n")
+
+
+
+
 # response = requests.get("https://syllart-shop.com/43-apple")
 # content = response.text
 
@@ -11,20 +39,6 @@ import requests
 #     print(link.get('src'))
 
 # print(img_link)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #
@@ -52,23 +66,6 @@ import requests
 #
 # min_value = min(article_upvote)
 # print(article_text[min_value]+"\n"+article_link[min_value])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # with open("website.html", encoding="utf-8") as file:
