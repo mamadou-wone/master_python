@@ -1,45 +1,62 @@
-import requests
-from bs4 import BeautifulSoup
-import lxml
-from smtplib import SMTP
+from pprint import pprint
+import json
+from selenium import webdriver
 
-INITIAL_PRICE = 2184.92
+chrome_driver_path = "C:/Users/megaw/Desktop/Dev/chromedriver_win32/chromedriver.exe"
+
+driver = webdriver.Chrome(executable_path=chrome_driver_path)
+driver.get(url="https://www.python.org/")
+even_dict = {}
+
+all_even = driver.find_element_by_xpath(xpath='//*[@id="content"]/div/section/div[3]/div[2]/div/ul')
+
+evens = all_even.find_elements_by_tag_name("li")
+
+for even in range(len(evens)):
+    time = evens[even].find_element_by_tag_name('time').text
+    name = evens[even].find_element_by_tag_name('a').text
+    even_dict[even] = {
+            "time": f"{time}",
+            "name": f"{name}"
+        }
 
 
-def get_reduction(current_price):
-    if current_price <= INITIAL_PRICE - (INITIAL_PRICE * 0.1):
-        return True
-    return False
+
+pprint(even_dict)
+
+# try:
+#     with open("evens.json", "r") as data_file:
+#         data = json.load(data_file)
+#         data.update(even_dict)
+# except FileNotFoundError:
+#     with open("evens.json", "w") as data_file:
+#         json.dump(even_dict, data_file, indent=4)
+# else:
+#     with open("evens.json", "w") as data_file:
+#         json.dump(data, data_file, indent=4)
+driver.quit()
 
 
-URL = "https://www.amazon.com/Apple-MacBook-16-Inch-512GB-Storage/dp/B081FZV45H/ref=sr_1_4?crid=2QS3AW4UAG71Z&dchild=1&keywords=macbook+pro&qid=1615114409&sprefix=mac%2Caps%2C1472&sr=8-4"
-header = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36",
-    "Accept-Language": "en-GB,en;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6"
-}
 
-response = requests.get(url=URL, headers=header)
-page_content = response.text
 
-soup = BeautifulSoup(page_content, "lxml")
-# print(soup)
 
-item_price = soup.find(id="priceblock_ourprice").get_text().split('$')[1].split(',')
-price = ""
-for item in item_price:
-    price += item
 
-price = float(price)
 
-if get_reduction(price):
-    message = f"Hello Boss vous avez une reduction de -10% sur le Macbook Pro..Allez vite l'acheter :) sur \n {URL}"
-    my_email = "megawone735@gmail.com"
-    to_send = "mamadouwone12345@gmail.com"
-    password = ""
-    with SMTP("smtp.gmail.com") as connection:
-        connection.starttls()
-        connection.login(user=my_email, password=password)
-        connection.sendmail(from_addr=my_email, to_addrs=to_send,
-                            msg=f"Subject:Reduction sur le macBook pro\n\n{message}")
-else:
-    print("Aucune réduction")
+
+
+
+
+
+
+
+
+
+# driver.get("https://www.amazon.com/Apple-MacBook-16-Inch-512GB-Storage/dp/B081FZV45H/ref=sr_1_4?dchild=1&keywords=macbook+pro&qid=1615122892&sr=8-4")
+# price = driver.find_element_by_id("priceblock_ourprice")
+# print(price.text)
+
+# search_bar = driver.find_element_by_name("q")
+# print(search_bar.get_attribute("placeholder"))
+
+
+# driver.quit()

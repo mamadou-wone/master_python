@@ -1,0 +1,22 @@
+{
+    "0": {
+        "time": "2021-03-13",
+        "name": "PyCon Belarus 2021"
+    },
+    "1": {
+        "time": "2021-03-18",
+        "name": "PyCon Cameroon 2021"
+    },
+    "2": {
+        "time": "2021-03-22",
+        "name": "Python Web Conference 2021"
+    },
+    "3": {
+        "time": "2021-03-25",
+        "name": "An introduction to delivering technical presentations with confidence - PyLadies Amsterdam"
+    },
+    "4": {
+        "time": "2021-04-08",
+        "name": "Python for ML and AI Global Summit'21"
+    }
+}
