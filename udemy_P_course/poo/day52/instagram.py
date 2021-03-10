@@ -33,11 +33,15 @@ class Instagram:
     def follow_users(self, s_xpath):
         suscribers = self.driver.find_element_by_xpath(s_xpath)
         suscribers.click()
-        time.sleep(5)
-        # container = self.driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]')
-        # container.send_keys(Keys.PAGE_UP)
-        suscribers_list = self.driver.find_elements_by_css_selector(".PZuss div div button")
-        print(suscribers_list)
-        print(len(suscribers_list))
-        for i in suscribers_list:
-            i.click()
+        time.sleep(3)
+        total_suscribers = self.driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/ul/li[2]/a/span').text
+        scroll = self.driver.find_element_by_xpath("/html/body/div[5]/div/div/div[2]")
+        for i in range(int(total_suscribers)):
+            btn = self.driver.find_elements_by_css_selector("li button")
+            for item in btn:
+                item.click()
+                time.sleep(2)
+            self.driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", scroll)
+            time.sleep(2)
+            print(len(btn))
+

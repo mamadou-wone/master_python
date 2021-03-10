@@ -24,5 +24,6 @@ time.sleep(2)
 suscriber_xpath = '//*[@id="react-root"]/section/main/div/header/section/ul/li[2]/a'
 suscriber_btn_class = "sqdOP  L3NKy   y3zKF     "
 
-while True:
-    instagram.follow_users(suscriber_xpath)
+instagram.follow_users(suscriber_xpath)
+# while True:
+#     instagram.follow_users(suscriber_xpath)
