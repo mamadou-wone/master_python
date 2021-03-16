@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "header.html" %}
+
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{all_post[post_id - 1].img}}')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-heading">
+                    <h1>{{ all_post[post_id - 1].title }}</h1>
+                    <h2 class="subheading">{{ all_post[post_id - 1].subtitle }}</h2>
+                    <span class="meta">Posted by
+              <a href="#">{{ all_post[post_id - 1].author }}</a>
+              {{ all_post[post_id - 1].date }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>
+                    {{ all_post[post_id - 1].body }}
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+{% include "footer.html" %}
+<!-- Bootstrap core JavaScript -->
+<script src="static/vendor/jquery/jquery.min.js"></script>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="static/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
