@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}Success{% endblock %} {% block content %}
+
+<main class="">
+    <div class="bg-light p-5 rounded">
+        <h1>Welcome</h1>
+        <p class="lead">Are you ready?.</p>
+        <a class="btn btn-lg btn-primary" href="{{ url_for('login') }}" role="button">Loggin</a>
+    </div>
+</main>
+
+<div class="container">
+    <h1>Top Secret </h1>
+    <iframe src="https://giphy.com/embed/Ju7l5y9osyymQ" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <p><a href="https://giphy.com/gifs/rick-astley-Ju7l5y9osyymQ">via GIPHY</a></p>
+</div>
+{% endblock %}
