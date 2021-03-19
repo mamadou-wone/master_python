@@ -12,7 +12,7 @@
         {% if not books%}
         <li>Library is emty</li>
         {% else %} {% for book in books %}
-        <li>{{book['title'] }} - {{book['author']}} - {{book['rating']}}/10</li>
+        <li>{{book.title }} - {{book.author}} - {{book.rating}}/10</li>
         {% endfor %} {% endif %}
     </ul>
 
