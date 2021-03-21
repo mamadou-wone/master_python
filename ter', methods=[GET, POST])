@@ -1,0 +1,653 @@
+[33mcommit ff4969ec3c65f46f348ccc35ef7ced5a86297f2c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Mar 21 14:03:16 2021 +0000
+
+    finish day68 69 and flask authenticate ptoject
+
+[33mcommit 63f190880435bdc34a2f7f04e8726e75bcc4965f[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Mar 20 21:20:57 2021 +0000
+
+    finish day 66 67
+
+[33mcommit bfbe424464537e5f6782a9cb3041fe8796cef3d6[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Mar 19 11:16:41 2021 +0000
+
+    finish day63 and flask_sqlalchemy project
+
+[33mcommit c51795f86d1b6ab52f0b8957e3f4316f305b633d[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Mar 18 17:04:43 2021 +0000
+
+    day63
+
+[33mcommit 47b350ed703f3c292bdddfae71a3edafd23384f1[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Mar 18 12:37:06 2021 +0000
+
+    finish day 62 and coffee wifi project
+
+[33mcommit 4a991564a74e2521315a7e67cdf13f8b87f6216d[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Mar 17 13:22:49 2021 +0000
+
+    finish day 61 and WTF Form with flask
+
+[33mcommit 3851b19ade5131916de83c04ded3fa3ea39eed04[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Mar 16 11:55:56 2021 +0000
+
+    finish day 59 & 60 blop upgrade
+
+[33mcommit e76b3be40ded1fca65159af9868219c623acca04[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Mar 16 11:02:28 2021 +0000
+
+    finish day 58 blop upgrade
+
+[33mcommit c2fc54c7f0c36eac965497ce196f7207f77977a9[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Mar 15 17:54:19 2021 +0000
+
+    day56 process bootstrap
+
+[33mcommit 2765ddbde9b6cffc3d9af686a594c543630efcd9[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Mar 14 15:27:50 2021 +0000
+
+    day58 process
+
+[33mcommit a285d8824513df5ac0040c5c822450186c35189e[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Mar 13 20:14:29 2021 +0000
+
+    Start day58 Bootstarp
+
+[33mcommit d369e90d9f8884e89978d7d4c1b58c82bcd1a22c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Mar 12 17:13:50 2021 +0000
+
+    finish day57 and blog post part1
+
+[33mcommit a151491924d58956fea0207f101fa98c519feece[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Mar 12 11:29:52 2021 +0000
+
+    finish day56
+
+[33mcommit 5836d2bbf464732605f08bf8b630086036d488f8[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Mar 11 19:17:11 2021 +0000
+
+    start day56
+
+[33mcommit 08f51d372e38434a62d4710c0f2e15d3d393fa78[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Mar 11 14:39:50 2021 +0000
+
+    finish day55
+
+[33mcommit bd1b56d0817ec39278a516e2a726c04ac222682d[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Mar 11 11:13:41 2021 +0000
+
+    finish day54 and learn python decorator function
+
+[33mcommit 5e768599c0b4e095698d501c2ad695cbd8d6282b[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Mar 10 16:20:10 2021 +0000
+
+    finish day 53 and found location with expat dakar
+
+[33mcommit 7a47ad19b53aded432b1f0ed3396e67db58f5de4[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Mar 10 11:59:56 2021 +0000
+
+    update day52
+
+[33mcommit 4d40bac5873bb2b8838dd6a3b71bc60d9fb41a31[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Mar 9 20:29:18 2021 +0000
+
+    finish day 52 and instagram bot
+
+[33mcommit ffabd704293dd9884e8e860aaf3732f77d0b8db6[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Mar 9 16:57:58 2021 +0000
+
+    finish day51 and twitter tweet bot
+
+[33mcommit a058abef3f70aa1ed612bad45f122f3afd39899e[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Mar 9 14:29:31 2021 +0000
+
+    finish day 50
+
+[33mcommit 945f7394e308c2d534151a05fbed69c7b17d4971[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Mar 8 14:12:41 2021 +0000
+
+    finish day49 and jumia Bot
+
+[33mcommit 35d09d0f1e703f698789615b2c79711cf51af9e6[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Mar 7 21:10:32 2021 +0000
+
+    finish day 48
+
+[33mcommit 83f5de0ebdc007d8cbdd9e7bae191b60476677f5[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Mar 7 11:50:13 2021 +0000
+
+    finish day 48
+
+[33mcommit 2fa53dbd359dd2b4093475a461ab6bec23667f57[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Mar 6 13:53:10 2021 +0000
+
+    finish day 46 and spotify top 100 song by date
+
+[33mcommit 91d7aa49c4ef097e061fbb35e41e260c701fd71b[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Mar 5 15:18:14 2021 +0000
+
+    finish day45
+
+[33mcommit abfbc5f4a0ab6df66b3a81b9b5052cf796e4cc4d[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Mar 4 20:11:15 2021 +0000
+
+    Day 45 start Web Scrapping
+
+[33mcommit 53b788971780d424df97997b1b44550c870f9a29[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Mar 4 16:32:00 2021 +0000
+
+    finish day41 42 43 44
+
+[33mcommit 5d4b5a229502b264677f5d9a7678901701f60e07[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Mar 3 14:26:21 2021 +0000
+
+    Finish day 41 and 42 html revision
+
+[33mcommit e854aeaaf4c82625a74b1be7d82e22a4e5b5597c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Mar 2 11:23:55 2021 +0000
+
+    finish day40
+
+[33mcommit d2c5834b9490eb71b02378c3a331387ed9e123b8[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Mar 1 20:40:56 2021 +0000
+
+    Start day40
+
+[33mcommit d20b132d70437a26731327fbe096b6f15681d6ce[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Feb 28 20:25:42 2021 +0000
+
+    finish day 39
+
+[33mcommit f013ea4d508ecb89861fe208569ad653b1a8ea77[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Feb 27 22:19:11 2021 +0000
+
+    start day 38
+
+[33mcommit f9dcfbc90fcf2fcc853c066a43ddad4623a37cfe[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Feb 27 20:30:46 2021 +0000
+
+    finish day 37 and pixela api init
+
+[33mcommit b1cf3ca0d098d149774a9481aff123151a69e55c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Feb 26 12:21:59 2021 +0000
+
+    finish day36
+
+[33mcommit 1a0af38c8da215dac8c0f9445ad769f95acff5e0[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Feb 25 12:38:42 2021 +0000
+
+    finish day35
+
+[33mcommit 6f137846c577f344fa2d01156c967d82beca89df[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Feb 24 11:25:08 2021 +0000
+
+    finish day 34 and finish quizzapp
+
+[33mcommit fa422d437da63d2799f9b1f6c9aab1bb56e55b24[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Feb 23 12:32:51 2021 +0000
+
+    finish day 33 and api init
+
+[33mcommit a615634a1cd83f76b9b07a4ea9d21166b6c63922[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Feb 22 20:52:23 2021 +0000
+
+    day null
+
+[33mcommit 04a5d4fdf9b1cf69484e00ba5f77495b9ed998f9[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Feb 21 15:45:59 2021 +0000
+
+    finish day32
+
+[33mcommit 219f14f033d3c031d60c7b5eb2b6a3faab0eb361[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Feb 21 10:28:44 2021 +0000
+
+    finish day31
+
+[33mcommit deb6dd79a1ca92d347bf6c9d15a23dc2bb03b8d5[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Feb 20 21:49:15 2021 +0000
+
+    start day 31
+
+[33mcommit 940688e55ec31945eb1140548f938970a0eb3986[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Feb 19 12:10:45 2021 +0000
+
+    start day 31
+
+[33mcommit 13a26e1cfad49d8061f8fc52701f2d467ba0893c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Feb 18 13:17:07 2021 +0000
+
+    finish day 30 and advanced password manager project done"
+
+[33mcommit b25b0b992401a9a0a2decd22fcceb0ae6177b1d1[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Feb 17 19:09:53 2021 +0000
+
+    Finish day29
+
+[33mcommit e23875f919a5c7cdd99115a691c79725a2b665e6[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Feb 17 10:36:32 2021 +0000
+
+    Finish day 28 and pomodoro project
+
+[33mcommit 11bcd1498d8660f9d747112105668834734f46bf[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Feb 16 19:28:51 2021 +0000
+
+    day 28
+
+[33mcommit 1cddc5d566e775768770569cccd9aab4447f66fa[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Feb 15 11:47:29 2021 +0000
+
+    Finish day27 and tkinter libary init
+
+[33mcommit f413c2ae097b94d394fcd184dbcc15ca811b2f16[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Feb 14 13:05:55 2021 +0000
+
+    finish day26 list and dict comprehension
+
+[33mcommit a58e0a11ae65a087f1ea197a10fc5edcdd562ef3[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Feb 13 20:24:48 2021 +0000
+
+    finish day 25
+
+[33mcommit 342f72a30e957edeb467a8c069359910c639b073[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Feb 13 19:51:32 2021 +0000
+
+    finish day 25
+
+[33mcommit 0b87efe3b7f0ca9ad9cec2f60eee9200dc284b03[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Feb 12 09:49:43 2021 +0000
+
+    Finish day24
+
+[33mcommit 4d72fee06a39cd94445bdc6bacc862c019b7fc1b[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Feb 12 09:42:13 2021 +0000
+
+    finish day 24
+
+[33mcommit f4154296e5a45e8e43d594dcbd9e234ea42d76ef[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Feb 11 10:45:38 2021 +0000
+
+    Start day 24
+
+[33mcommit 55de21d8116c352fa306c5b482592efde4e3ae17[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Feb 10 19:38:37 2021 +0000
+
+    Start day24
+
+[33mcommit a8cbbc1b92e8d42b0e86f744f94197a25bd68f67[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Feb 10 13:35:17 2021 +0000
+
+    Finish day23
+
+[33mcommit aa74abef6083a3afe696047c4e680d13a89d40c4[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Feb 9 11:49:07 2021 +0000
+
+    finish day 22
+
+[33mcommit df5370c3445a25c738f679206304d83d0fb3791e[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Feb 8 08:13:03 2021 +0000
+
+    Finish Snake Game by myself
+
+[33mcommit 60f794458c00494b4858c5ed058f4d0a40955328[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Feb 7 13:55:06 2021 +0000
+
+    Finish Snake Game
+
+[33mcommit b3b40636de862b7037ec5c8eaa7769a07cb5b6a2[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Feb 6 19:01:57 2021 +0000
+
+    Day20 part 1
+
+[33mcommit b2bddf20bba1262a7392bcf9256c471ffc0eb262[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Feb 5 10:28:14 2021 +0000
+
+    finish day19 and turtle race game
+
+[33mcommit 8cb852fd37f28c585e33e0cfe99b8bb5d2e531a7[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Feb 4 08:11:58 2021 +0000
+
+    Finish day18 and painting project
+
+[33mcommit 9e25cc2ef4eccd0a7e665cdcdf169cfecc85a7f9[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Feb 3 20:52:55 2021 +0000
+
+    turtlr project
+
+[33mcommit 57dbded42d6dc678983625031f72731cbd277715[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Feb 2 13:01:11 2021 +0000
+
+    finish day17
+
+[33mcommit ab04b331973eb09144ce58ea3be9bfeee9bdcd34[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Feb 1 12:53:20 2021 +0000
+
+    Star oop
+
+[33mcommit 7abc88a50d4c9211c8306068e90f82e2d577de6b[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Jan 31 17:29:21 2021 +0000
+
+    Finis Day15
+
+[33mcommit 686b74b07a69943cecdbaecbb48b0eef6f02b16b[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Jan 30 18:20:58 2021 +0000
+
+    Day15
+
+[33mcommit 2bd63a80015ad62b32c1cd625504e6f3ea6ca001[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Jan 29 07:22:42 2021 +0000
+
+    Finish day 14
+
+[33mcommit 381486fef6ecfecd9b4333c73f4247ace90c15fc[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Jan 28 12:45:03 2021 +0000
+
+    Day14
+
+[33mcommit d28a87e52ba6e0593b9921c10e07ad569e5c3ce4[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Jan 27 10:21:37 2021 +0000
+
+    Finish Day 12 and the guessing number project
+
+[33mcommit a428f5498a661fda12d97a6dc9fdca28e3859b8d[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Jan 27 05:40:26 2021 +0000
+
+    Days finish backjack project
+
+[33mcommit b6a3a3cc0baa1eae20c598021b3db0164ec3f217[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Jan 26 12:00:33 2021 +0000
+
+    Start Blacjack project Day 11
+
+[33mcommit 57e08574ea26b34c8e42e56bf5dbc6a820916abb[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Jan 25 11:59:56 2021 +0000
+
+    Finish Day 10
+
+[33mcommit d2d940654006bb5ccf225a93966a20696c976ab5[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Jan 25 11:03:11 2021 +0000
+
+    Start day 10
+
+[33mcommit e39dcf53eb6dfd5f7241d960f0db5737fba0b1bb[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Jan 24 18:55:45 2021 +0000
+
+    finish day 10
+
+[33mcommit 82ec076b4e9efa1b7509e35003bbb74f05f3990d[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Jan 24 15:26:59 2021 +0000
+
+    cesar cipher
+
+[33mcommit e122d5cce82b149005ac229440f8907ba1a64a1c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Jan 24 12:07:50 2021 +0000
+
+    continue day8
+
+[33mcommit 9b45c61bf95f99d6e3254458787c689e8658b905[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Jan 23 19:26:43 2021 +0000
+
+    null
+
+[33mcommit 54132e943109d9b89195aa23bc4440311fe30b56[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Jan 22 11:04:44 2021 +0000
+
+    Day null
+
+[33mcommit e3ec2cef4986bcedae7b78917fdf7699e42c33d9[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Jan 21 11:36:09 2021 +0000
+
+    Finish day7 finish Hangmann project
+
+[33mcommit a03bebd32445f20503e0bc452dc8b2794260f647[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Jan 20 20:57:40 2021 +0000
+
+    Day7
+
+[33mcommit 82dc869ca7a2537cbabb5477c5c0ffcd60dbbb30[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Jan 19 19:40:43 2021 +0000
+
+    FInish Day6 #100DaysOfCode
+
+[33mcommit ed8b24d5fc79efd044c8590bb94bb818cbea4201[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Jan 18 21:48:07 2021 +0000
+
+    Day null
+
+[33mcommit 1ae535c8ffc2435e59b49b0ecd67d7f2660db7cb[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Jan 17 18:29:50 2021 +0000
+
+    Day5 Password gen
+
+[33mcommit 51fcb7c8525bd172888745ce490b7c1735211372[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Jan 16 18:05:17 2021 +0000
+
+    Day null
+
+[33mcommit b869c2f129dc8a9d963735e25c802b5d10359f5c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Jan 15 11:14:22 2021 +0000
+
+    highter score
+
+[33mcommit d26856a2c23dca3354b2cb6afcf85dae140808b0[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Jan 15 09:50:22 2021 +0000
+
+    finish first part day 5
+
+[33mcommit 4b6f801740bda63edbca1398c918eea75840a29c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Jan 14 11:07:17 2021 +0000
+
+    Day4 end
+
+[33mcommit 7518658edc3a8ebfa0d918c2503d56e6cf2ef1cd[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Jan 13 20:55:03 2021 +0000
+
+    Day null
+
+[33mcommit 18dc52b078b506cb9563ff397323cb9a63c83407[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Jan 12 20:54:51 2021 +0000
+
+    finish the day
+
+[33mcommit 0904abd9a48ad528b4e8fcde96134106711abaee[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Jan 12 11:13:13 2021 +0000
+
+    Finish Day 3 and start day 5
+
+[33mcommit e26336fab1eba37830fe8d1fa07c36d488f6e878[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Jan 11 12:19:58 2021 +0000
+
+    #100DayOfCode Python Day3 [3/100]
+
+[33mcommit 850c88eb76e6ea04f94e20e6a2f546a349356961[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Jan 10 16:37:42 2021 +0000
+
+    #100DaysOfCode Python Day2 [2/100]
+
+[33mcommit 638da38bdaa56b3f6bc55eabe88f0472db983337[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Jan 9 13:59:41 2021 +0000
+
+    #100DayOfCode Python Day [1/100]
+
+[33mcommit 937f861c834c2a4a8c43f5592bb27a99a3fbe206[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Nov 27 17:05:16 2020 +0000
+
+    27/11/2020
+
+[33mcommit 584a319a63667612653b23eac5a8bc94914aa903[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Oct 23 12:25:47 2020 +0000
+
+    23/10/2020
+
+[33mcommit ef07f359e770e875ff076bf4c792cbc22f57e88c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Oct 22 16:30:12 2020 +0000
+
+    22/10/2020
+
+[33mcommit 7771f7faa29cce52bd81216f6e1074b5e744f4a4[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Oct 20 13:27:10 2020 +0000
+
+    20/10/2020
+
+[33mcommit 15408d2c7b392eec38f7644d69d89cdb8b89a9a9[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Oct 19 19:21:45 2020 +0000
+
+    19/10/2020
+
+[33mcommit 2b6b85e8377f7fa6d9acc2a805a9e732010946af[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Oct 18 15:10:48 2020 +0000
+
+    18/10/2020
+
+[33mcommit 34e88385d91c3139321c8801e833db6065fb79ee[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Oct 17 18:02:09 2020 +0000
+
+    17/10/2020
+
+[33mcommit b5cad6a98a4fee9b1dc3e9fb43b60af0c9c34109[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Fri Oct 16 17:56:43 2020 +0000
+
+    16/10/2020
+
+[33mcommit 23e2b1f19bd3d98741a5e6d32a96bf308893d5a2[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Thu Oct 15 21:54:55 2020 +0000
+
+    15/10/2020
+
+[33mcommit cb523a5a00166ca93ee08985532eeedb96ad12af[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Wed Oct 14 21:27:06 2020 +0000
+
+    14/10/2020
+
+[33mcommit 52af15f3c14ecddf1675f31528c5bb9e9d10f93c[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Tue Oct 13 21:08:54 2020 +0000
+
+    13/10/2020
+
+[33mcommit bd0f15ef0e9ce3694fb4ca67b011c9ef9ccd2739[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Mon Oct 12 20:57:18 2020 +0000
+
+    Lundi 12 Octobre 2020
+
+[33mcommit 50a4d27ad8e29404cb65123bb7f32f530ec3d2bc[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Oct 11 11:40:19 2020 +0000
+
+    Day3
+
+[33mcommit bfa367f946c6e8ffbbc6a9c9f7b613d13ad3ac79[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sat Oct 10 14:40:59 2020 +0000
+
+    Day2
+
+[33mcommit d7980e0664e6ed23803746e0165b528ee88edbe7[m
+Author: Mamadou WONE <mamadouwone12345@gmail.com>
+Date:   Sun Sep 6 15:37:37 2020 +0000
+
+    Day1 with python
