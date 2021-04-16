@@ -9,4 +9,8 @@
 
 text = "Welcome Boss"
 
-print(text.replace("Boss", "Amir"))
+try:
+    with open("test.txt") as file:
+        pass
+except FileNotFoundError:
+    new_file = open("text.txt", "w")
