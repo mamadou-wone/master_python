@@ -1,3 +1,75 @@
-Letters,Code
-A,▄  ▄▄▄
-B,▄▄▄  ▄  ▄  ▄
+Key,Value
+" ", " "
+A,. _
+N,_ .
+B,_ . . .
+O,_ _ _
+C,_ . _ .
+P,. _ _ .
+D,_ . .
+Q,_ _ . _
+E,.
+R,. _ .
+F,. . _ .
+S,. . .
+G,_ _ .
+T,_
+H,. . . .
+U,. . _
+I,. .
+V,. . . _
+J,. _ _ _
+W,. _ _
+K,_ . _
+X,_ . . _
+L,. _ . .
+Y,_ . _ _
+M,_ _
+Z,_ _ . .
+ , 
+,
+1,. _
+6,_ . . . .
+2,. . _
+7,_ . . .
+3,. . . _
+8,_ . .
+4,. . . . _
+9,_ .
+5,.
+0,_ (sometimes a long dash is used)
+"Comma ,",_ _ . . _ _
+"Full stop .
+(period)",. _ . _ . _
+Question mark ?,. . _ _ . .
+Semicolon ;,_ . _ . _ .
+"Colon :
+or division sign",_ _ _ . . .
+"Slash /
+(fraction bar)",_ . . _ .
+Dash -,_ . . . . _
+Apostrophe ',. _ _ _ _ .
+"Inverted comms """,. _ . . _ .
+Underline,. . _ _ . _
+Left bracket or parenthesis (,_ . _ _ .
+Right bracket or parenthesis ),_ . _ _ . _
+"Double hyphen =
+equals sign",_ . . . _
+"Cross +
+addition sign",. _ . _ .
+Multiplication sign X,_ . . _
+Commercial at @,. _ _ . _ .
+Á,. _ _ . _
+Ä,. _ . _
+É,. . _ . .
+Ñ,_ _ . _ _
+Ö,_ _ _ .
+Ü,. . _ _
+Start of work (CT),_ . _ . _ .
+End of work (VA),. . . _ . _
+Invitation to transit (K),_ . _
+Invitation for a particular station to transmit (KN),_ . _ _ .
+End of message (AR),. _ . _ .
+Wait,. _ . . .
+Error,. . . . . . . .
+Understood,. . . _ .
