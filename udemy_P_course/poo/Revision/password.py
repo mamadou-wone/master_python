@@ -1,6 +1,4 @@
-# doit se terminer par @ucad.edu.sn
 
-# password:
 
 def verif_email():
     start = True
